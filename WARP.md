@@ -32,6 +32,7 @@ Once a test framework is configured, use that framework's CLI options to run ind
   - Contains only a placeholder `test` script and no other `scripts`.
 
 Given the current state of the repo, future code will likely follow a pattern such as:
+
 - Implementing the HTTP server in `index.js` (or importing from a `src/` directory).
 - Defining route handlers and middleware in separate modules once multiple endpoints are added.
 

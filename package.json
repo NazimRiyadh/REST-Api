@@ -2,10 +2,13 @@
   "name": "rest_api",
   "version": "1.0.0",
   "description": "\"this is e-book api project\"",
+  "type": "module",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "nodemon server.ts"
+    "dev": "tsx watch server.ts",
+    "lint": "eslint .",
+    "format": "prettier --write ."
   },
   "keywords": [
     "rest",
@@ -15,9 +18,21 @@
   "author": "Nazim Riyadh",
   "license": "ISC",
   "devDependencies": {
+    "@eslint/js": "^9.39.1",
+    "@types/express": "^5.0.6",
     "@types/node": "^24.10.1",
+    "eslint": "^9.39.1",
+    "eslint-config-prettier": "^10.1.8",
+    "globals": "^16.5.0",
+    "jiti": "^2.6.1",
     "nodemon": "^3.1.11",
+    "prettier": "^3.7.4",
     "ts-node": "^10.9.2",
-    "typescript": "^5.9.3"
+    "tsx": "^4.21.0",
+    "typescript": "^5.9.3",
+    "typescript-eslint": "^8.48.1"
+  },
+  "dependencies": {
+    "express": "^5.2.1"
   }
 }
